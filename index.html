@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>AdSense 테스트</title>
 </head>
 <body>
@@ -12,20 +12,19 @@
        data-ad-client="ca-pub-3940256099942544"
        data-ad-slot="6300978111"></ins>
 
+  <!-- adsbygoogle script 로딩 -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
           crossorigin="anonymous"></script>
 
+  <!-- 광고 로딩 시점: 반드시 window.onload 이후 -->
   <script>
-    window.onload = function () {
+    window.onload = () => {
       try {
         (adsbygoogle = window.adsbygoogle || []).push({});
-
-        document.querySelector('.adsbygoogle').innerHTML
       } catch (e) {
         console.error('AdSense Error:', e);
       }
     };
-    
   </script>
 </body>
 </html>
