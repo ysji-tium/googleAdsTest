@@ -7,24 +7,18 @@
 <body>
   <h1>AdSense 테스트 광고</h1>
 
-  <ins class="adsbygoogle"
-       style="display:inline-block;width:300px;height:250px"
-       data-ad-client="ca-pub-3940256099942544"
-       data-ad-slot="6300978111"></ins>
+  
+  <script async
+      data-adbreak-test="on"
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-123456789"
+      crossorigin="anonymous">
+</script>
+<script>
+   window.adsbygoogle = window.adsbygoogle || [];
+   var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
+</script>
 
-  <!-- adsbygoogle script 로딩 -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-          crossorigin="anonymous"></script>
 
-  <!-- 광고 로딩 시점: 반드시 window.onload 이후 -->
-  <script>
-    window.onload = () => {
-      try {
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (e) {
-        console.error('AdSense Error:', e);
-      }
-    };
-  </script>
+  
 </body>
 </html>
