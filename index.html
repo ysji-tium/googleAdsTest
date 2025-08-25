@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
 
   <h1>AdSense 테스트</h1>
 
-<!--   <ins class="adsbygoogle"
+  <ins class="adsbygoogle"
        style="display:block; width:300px; height:250px;"
        data-ad-client="ca-pub-3940256099942544"
        data-ad-slot="1234567890"></ins>
@@ -17,17 +17,41 @@
   <script>
        (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
- -->
 
-  <script async
-      data-adbreak-test="on"
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-123456789"
-      crossorigin="anonymous">
-</script>
 <script>
    window.adsbygoogle = window.adsbygoogle || [];
    var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
 </script>
 
+</body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>AdSense 테스트</title>
+    <script async
+        data-adbreak-test="on"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-123456789"
+        crossorigin="anonymous">
+    </script>
+    <script>
+        window.adsbygoogle = window.adsbygoogle || [];
+        var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
+    </script>
+</head>
+<body>
+    <h1>AdSense 테스트</h1>
+    <button onclick="requestAd()">광고 테스트하기</button>
+
+    <script>
+        function requestAd() {
+            adBreak({
+                type: 'start'
+            });
+        }
+    </script>
 </body>
 </html>
